@@ -23,3 +23,15 @@
  .support-section .resource-content{padding:22px}
  .support-section .resource-actions button,.support-section .resource-actions a{min-width:0}
 }
+
+/* Sesión 5: tarjeta específica para el paquete de replicación */
+.session-group .resource-grid:has(.resource-file){grid-template-columns:repeat(3,minmax(0,1fr));max-width:100%}
+.session-group .resource-grid:has(.resource-file) .resource{display:flex;flex-direction:column;min-width:0}
+.session-group .resource-grid:has(.resource-file) .resource-preview{height:178px;min-height:178px}
+.session-group .resource-grid:has(.resource-file) .resource-content{flex:1}
+.file-preview{height:178px;min-height:178px;background:linear-gradient(145deg,#0b344a,#086c8d);color:white;display:flex;align-items:flex-start;justify-content:center;flex-direction:column;padding:22px;gap:6px;overflow:hidden}
+.file-preview-symbol{display:grid;place-items:center;width:44px;height:44px;background:#66e5df26;border:1px solid #66e5df60;border-radius:12px;color:#84f1ea;font-size:24px;font-weight:900;margin-bottom:6px}
+.file-preview strong{font-size:12px;line-height:1.4;letter-spacing:.075em}.file-preview>span:not(.file-preview-symbol){font-size:11px;color:#85e7eb;font-weight:800}.file-preview small{font-size:10px;color:#c9e4ed;line-height:1.5}
+.resource-file .resource-actions a{background:#e6f6f9;color:#067ea1;border-color:#d2edf3;width:100%}
+@media(max-width:1100px){.session-group .resource-grid:has(.resource-file){grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.session-group .resource-grid:has(.resource-file){grid-template-columns:minmax(0,1fr)}}
